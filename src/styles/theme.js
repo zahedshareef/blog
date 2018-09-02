@@ -19,7 +19,7 @@ const theme = createMuiTheme({
     },
     fonts: {
       unstyledFamily: `Arial`,
-      styledFamily: "Open Sans",
+      styledFamily: "Roboto",
       styledFonts: "300,400,600"
     }
   },

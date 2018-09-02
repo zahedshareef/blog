@@ -1,5 +1,5 @@
 ---
-title: Projects I've worked on
+title: Projects
 menuTitle: Projects
 ---
 
