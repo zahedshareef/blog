@@ -2,7 +2,7 @@ const colors = require("../../src/styles/colors");
 
 module.exports = {
   siteTitle: "Zahed Shareef", // <title>
-  shortSiteTitle: "Zahed Shareef", // <title> ending for posts and pages
+  shortSiteTitle: "Zahed", // <title> ending for posts and pages
   siteDescription: "Zahed Shareef - Software Engineer",
   siteUrl: "https://zahedshareef.com/blog",
   pathPrefix: "",
@@ -16,8 +16,8 @@ module.exports = {
   infoTitleNote: "software engineer",
   // manifest.json
   manifestName: "Zahed Shareef",
-  manifestShortName: "Personal Blog", // max 12 characters
-  manifestStartUrl: "/",
+  manifestShortName: "Zahed Blog", // max 12 characters
+  manifestStartUrl: "/projects",
   manifestBackgroundColor: colors.background,
   manifestThemeColor: colors.background,
   manifestDisplay: "standalone",
@@ -26,7 +26,7 @@ module.exports = {
   // social
   authorSocialLinks: [
     { name: "github", url: "https://github.com/zahedshareef" },
-    { name: "twitter", url: "https://twitter.com/realzahed" },
-    { name: "facebook", url: "https://www.linkedin.com/in/zahedshareef/" }
+    { name: "linkedin", url: "https://www.linkedin.com/in/zahedshareef/" },
+    { name: "twitter", url: "https://twitter.com/realzahed" }
   ]
 };
