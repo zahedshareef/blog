@@ -14,6 +14,7 @@
 		"format": "prettier --write src/**/*.{js,jsx}",
 		"lint-errors": "eslint src/**/*.{js,jsx} --quiet",
 		"lint": "eslint src/**/*.{js,jsx}",
+		"test": "eslint src/**/*.{js,jsx}",
 		"generate-app-icons": "sh ./scripts/generate-app-icons.sh"
 	},
 	"devDependencies": {
