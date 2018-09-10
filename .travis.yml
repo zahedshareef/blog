@@ -1,19 +1,12 @@
 language: node_js
 node_js:
   - "stable"
-cache:
-  directories:
-  - node_modules
-deploy:
-  provider: pages
-  skip-cleanup: true
-  local_dir: public
-  keep-history: true
-  on:
-    branch: master
+cache: yarn
+branches:
+  only:
+    - master
 before_script:
   - "yarn global add gatsby"
 script:
   - "yarn test"
   - "gatsby build"
-  
