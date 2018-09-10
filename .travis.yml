@@ -16,5 +16,4 @@ before_script:
 script:
   - "yarn test"
   - "gatsby build"
-after_success:
-  - "gatsby serve"
+  
