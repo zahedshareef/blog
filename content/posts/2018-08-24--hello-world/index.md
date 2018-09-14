@@ -2,6 +2,7 @@
 title: Hello World
 subTitle: But people will never forget how you made them feel.
 category: "personal"
+status: true
 cover: hello-world.jpg
 ---
 
