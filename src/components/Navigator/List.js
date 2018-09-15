@@ -62,18 +62,14 @@ class List extends React.Component {
 						/>
 						<ul className={classes.list}>
 							{posts &&
-								posts.map(
-									(post, i) => (
-										(
-											<ListItem
-											key={i}
-											post={post}
-											linkOnClick={linkOnClick}
-											categoryFilter={categoryFilter}
-										/>
-										)
-									)
-								)}
+								posts.map((post, i) => (
+									<ListItem
+										key={i}
+										post={post}
+										linkOnClick={linkOnClick}
+										categoryFilter={categoryFilter}
+									/>
+								))}
 						</ul>
 					</div>
 				</SpringScrollbars>

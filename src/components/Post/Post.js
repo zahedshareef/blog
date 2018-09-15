@@ -11,14 +11,13 @@ const Post = (props) => {
 	const frontmatter = (post || {}).frontmatter;
 	const title = ((post || {}).frontmatter || {}).title;
 	const subTitle = ((post || {}).frontmatter || {}).subTitle;
-	const status = ((post || {}).frontmatter || {}).status;
 	const date = ((post || {}).fields || {}).prefix;
 	const html = (post || {}).html;
 	const htmlAst = (post || {}).htmlAst;
 
 	return (
 		<Article>
-			<PostHeader title={title} subTitle={subTitle} date={date} status={status} />
+			<PostHeader title={title} subTitle={subTitle} date={date} />
 			<Content html={html} />
 			<PostFooter author={author} post={post} slug={slug} facebook={facebook} />
 		</Article>
@@ -29,7 +28,6 @@ Post.propTypes = {
 	post: PropTypes.object.isRequired,
 	author: PropTypes.object.isRequired,
 	slug: PropTypes.string.isRequired,
-	status: PropTypes.string.isRequired,
 	facebook: PropTypes.object.isRequired
 };
 

@@ -70,7 +70,6 @@ export const postQuery = graphql`
 			frontmatter {
 				title
 				subTitle
-				status
 				cover {
 					childImageSharp {
 						resize(width: 300) {

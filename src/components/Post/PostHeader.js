@@ -42,11 +42,9 @@ const styles = (theme) => ({
 
 const PostHeader = (props) => {
 	const { classes, title, subTitle, date, status } = props;
-
 	function myDate(dateString) {
 		const dateObj = new Date(dateString).toUTCString();
 		const dateToShow = dateObj.split(' ').slice(0, 4).join(' ');
-
 		return dateToShow;
 	}
 
@@ -54,9 +52,10 @@ const PostHeader = (props) => {
 		<header className={classes.header}>
 			<h1 className={classes.title}>{title}</h1>
 			<h2 className={classes.subTitle}>{subTitle}</h2>
-			<div className={classes.meta}>
-				{myDate(date)} - {status}
-			</div>
+			{/* <div className={classes.meta}>
+					{myDate(date)} - {status.toString()}
+				</div> */}
+			<div className={classes.meta}>{myDate(date)}</div>
 		</header>
 	);
 };
@@ -65,8 +64,7 @@ PostHeader.propTypes = {
 	classes: PropTypes.object.isRequired,
 	title: PropTypes.string.isRequired,
 	subTitle: PropTypes.string,
-	date: PropTypes.string.isRequired,
-	status: PropTypes.string.isRequired
+	date: PropTypes.string.isRequired
 };
 
 export default injectSheet(styles)(PostHeader);

@@ -159,7 +159,7 @@ class ListItem extends React.Component {
 						{/*<Img sizes={post.node.frontmatter.cover.children[0].sizes} />*/}
 					</div>
 					<div className={classes.listItemText}>
-						<h1>{post.node.frontmatter.title} {post.node.frontmatter.status}</h1>
+						<h1>{post.node.frontmatter.title}</h1>
 						{post.node.frontmatter.subTitle && <h2>{post.node.frontmatter.subTitle}</h2>}
 					</div>
 				</Link>
