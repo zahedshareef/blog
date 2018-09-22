@@ -2,7 +2,7 @@
 title: Environment variables
 subTitle: Setting environment variables on different operating systems
 category: "programming"
-cover: markus-spiske-706529-unsplash.jpg
+cover: 8763301796_10666b35f4_o.jpg
 ---
 
 Setting an environment variable is quite a common need by applications these days. It's a safe way to store some ids without exposing them publicly.
